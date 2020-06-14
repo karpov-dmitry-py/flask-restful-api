@@ -1,3 +1,12 @@
+"""
+REST API CRUD application with Flask, flask_restful, flask-SQLAlchemy and SQLite
+Run the following lines in python console to create a DB before running API:
+
+from projects_api import db
+db.create_all()
+
+"""
+
 from flask import Flask
 from flask_restful import Api, Resource, reqparse
 from flask_sqlalchemy import SQLAlchemy
